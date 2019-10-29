@@ -4,7 +4,7 @@ orbitType: string;
 type: string;
 operational: boolean;
 launchDate: string;
-shouldShowWarning: boolean;
+// shouldShowWarning: boolean;
 
     constructor (name: string, type: string, launchDate: string, orbitType: string, operational: boolean) {
     this.name = name;
@@ -13,5 +13,9 @@ shouldShowWarning: boolean;
     this.orbitType = orbitType;
     this.operational = operational;
     }
+
+shouldShowWarning() {
+        return this.type === "Space Debris";
+    }  
 }
 
