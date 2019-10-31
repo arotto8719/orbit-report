@@ -3,8 +3,13 @@
   <app-orbit-list [satellites]="displayList"></app-orbit-list> 
   
   <div class="search-form">
-      <input type="text" (keyup.enter)='search(searchTerm.value)' placeholder="Search:"></input>
-      <button onclick (click)='search(searchTerm.value)'>Search</button>
-    <!-- <input type="text"(keyup.enter)=><input
-    <button (click)='search(searchTerm.value)>Search</button> -->
+      <!-- <ol>
+        <li *ngFor ="Search">{{searchTerm}}</li>
+      </ol>
+       <hr> -->
+       <input type="text" (keyup.enter)="search(searchTerm.value)" placeholder="Search:"/>
+       <button (onclick)="search(searchTerm.value)">Search</button>
+       <!-- <p>{{searchTerm.value}}</p> -->
+    <!-- <input (keyup.enter)='search(searchTerm.value)' type='text' placeholder="Search:"/>
+       <button (click)='search(searchTerm.value)'>Search</button> -->
   </div>
