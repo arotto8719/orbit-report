@@ -15,7 +15,7 @@ launchDate: string;
     }
 
 shouldShowWarning() {
-        return this.type == this.name;
+        return this.type == "Space Debris";
         // if this.name = 'Space Debris' {
         // return this.name === true;
         // }
